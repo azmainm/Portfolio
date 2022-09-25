@@ -85,7 +85,15 @@ header{
   .sidenav>#logo{
     color: pink;
   }
+
+
+
   
+
+  .card:hover{
+    transform: scale(1.05);
+ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
   
   
   /*Education Section*/
@@ -103,7 +111,9 @@ header{
     margin: 0 10px;
     padding-bottom: 50px;
   }
-
+  .Hobby-icon:hover{
+    color:#FF647F;
+}
   /*Skills Section*/
   #Skills_Work{
     text-align: center;
@@ -172,9 +182,13 @@ header{
   ::-webkit-scrollbar-thumb:hover {
     background: #40E0D0; 
   }
-@media only screen and (max-width:375px){
+@media only screen and (max-width:550px){
+  header{
+    background-image: url("img/headerimgmini.jpg") ;
+    height:1100px;
+}
   .sidenav{
-    width: 54px;
+    width: 30px;
     height: 0px;
   }
 }
@@ -185,7 +199,7 @@ header{
         height:1100px;
     }
     #HeaderName >h1{
-        font-size:100px;
+        font-size:70px;
         left: 50%;
     }
     /*#HeaderName>h4{
@@ -213,6 +227,9 @@ header{
     #educH{
         padding-top: 80px;
         font-size: 60px;
+    }
+    .skills-icon{
+      font-size: 15px;
     }
 }
 
