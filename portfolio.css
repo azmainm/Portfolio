@@ -1,13 +1,17 @@
 html {
     scroll-behavior: smooth;
-    width: 100%;
+    width:100%;
+    overflow-x: hidden;
+  }
+  body{
+    overflow-x: hidden;
   }
   
 header{
     background-image: url("img/headerimgiphone.jpg") ;
     text-align: center;
     margin-bottom: 0;
-    height: 1020px;
+    height: 900px;
     position: relative;
     width: 100%;
 }
@@ -98,7 +102,12 @@ header{
     transform: scale(1.05);
     box-shadow: 0 4px 4px #FFC0CB;
 }
-  
+.cardd1work{
+  width:280px;
+}
+.cardd1{
+  height:320px;
+}
   
   /*Education Section*/
   #Educ_Exp{
@@ -158,7 +167,7 @@ header{
   padding-top: 10px;
 }
 .card-block{
-    padding: 10px;
+  padding: 10px;
 }
 
 /*Contact*/
@@ -189,22 +198,39 @@ header{
   ::-webkit-scrollbar-thumb:hover {
     background: #40E0D0; 
   }
-@media only screen and (max-width:767px) and (min-width: 200px){
+/*@media only screen and (max-width:767px) and (min-width: 200px){
+  html{
+    width:100%;
+  }
   header{
     background-image: url("img/headerimgmini.jpg") ;
     width: 100%;
-    height:1100px;
+    height:900px;
 }
   .sidenav{
     width: 30px;
     height: 0px;
   }
+  .card-block{
+    padding: 5px;
+}
+.row{
+  padding: 0px;
+}
+}*/
+.skillc{
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 @media only screen and (min-width:768px){
+  html{
+    width: 100%;
+  }
     header{
         background-image: url("img/headerimgipad.jpg") ;
         height:1100px;
+        width: 100%;
     }
     #HeaderName >h1{
         font-size:70px;
@@ -269,11 +295,21 @@ header{
         height:100%;
         width:60px;
     }
+    .cardd1work{
+      width: 375px;
+    }
+    .cardd1{
+      height:350px
+    }
     #educH{
         font-size: 30px;
     }
     #logo{
       padding-bottom: 15px;
+    }
+    .skillc{
+      margin-left: auto;
+      margin-right: auto;
     }
 }
 
